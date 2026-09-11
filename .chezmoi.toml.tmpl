@@ -1,5 +1,7 @@
 
-{{- $machine := promptStringOnce . "machine" "Machine type(pc/server)" -}}
+{{- $machine := promptStringOnce . "machine" "Machine type (pc/server)" | default "pc" -}}
+{{- $proxy := promptStringOnce . "proxy" "Proxy" | default "http://127.0.0.1:17890" -}}
 
 [data]
     machine = {{ $machine | quote }}
+    proxy = {{ $proxy | quote }}

@@ -28,8 +28,9 @@ export LANG=en_US.UTF-8
 
 export PATH=$HOME/.local/bin:$PATH
 
-{{ if eq .machine "pc" }}
 alias setproxy="source setproxy.sh"
+
+{{ if eq .machine "pc" }}
 alias ts-work="sudo tailscale switch work"
 alias ts-home="sudo tailscale switch home"
 {{ end }}
