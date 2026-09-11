@@ -1,0 +1,9 @@
+[".local/share/zsh/powerlevel10k"]
+    type = "git-repo"
+    url = "https://github.com/romkatv/powerlevel10k.git"
+    clone.args = ["--depth=1"]
+
+[".local/share/zsh/zsh-autosuggestions"]
+    type = "git-repo"
+    url = "https://github.com/zsh-users/zsh-autosuggestions.git"
+    clone.args = ["--depth=1"]
